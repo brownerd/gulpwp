@@ -1,0 +1,184 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title Post Process
+
+    link(rel='stylesheet', type='text/css', href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900,900italic,700italic,400italic,100italic')
+    link(rel='stylesheet', type='text/css', href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700')
+    link(rel='stylesheet', type='text/css', href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700')
+    link(rel='stylesheet', type='text/css', href='http://fonts.googleapis.com/css?family=Alfa+Slab+One')
+
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+
+  body
+
+    article
+
+      section(data-bespoke-state="theme--watermellon" data-bespoke-hash='postcss')
+        h2 PostCSS
+        h4 Don't 
+          i pre-process 
+          | the 
+          i post-process
+      
+      section(data-bespoke-state="theme--yellow" data-bespoke-hash='welcome')
+        h2 Welcome fuckers
+
+      
+      section(data-bespoke-state="theme--mint" data-bespoke-hash='preprocess')
+        h3.bold The 
+          i pre
+          |-process:
+
+        ul
+          li Write less code
+          li.strike Contatneate stylesheets
+          li.strike Minify css
+          li.strike Make sprite sheets
+          li.strike Make sourcemaps
+          li.strike Mixin browser prefixes
+          li.strike Mixin IE crap
+
+      
+      section(data-bespoke-state="theme--white" data-bespoke-hash='postprocess')
+        h3 These are 
+          br 
+          i post
+          |-processes:
+          
+        ul
+          li Minification - 
+            a(href="https://github.com/hail2u/node-csswring") CSSWring
+            |  / 
+            a(href="https://github.com/css/csso") CSSO
+          li Browser prefixing - 
+            a(href="https://github.com/postcss/autoprefixer") Autoprefixer / 
+            a(href="https://github.com/ai/browserslist") Browserlist
+          li REM to px - 
+            a(href="https://github.com/robwierzbowski/node-pixrem") Pixrem
+          li Streamlining media queries - 
+            a(href="https://github.com/hail2u/node-css-mqpacker") CSS MQPacker
+          li CSS 3 polyfills for IE - 
+            a(href="https://github.com/cssdream/cssgrace") CSS Grace
+          li Can I Use? - 
+            a(href="https://github.com/anandthakker/doiuse") Do I use
+          li CSS4 - 
+            a(href="https://github.com/cssnext/cssnext") cssnext
+          li More 
+            a(href="https://github.com/postcss/postcss") postCSS
+            |  plugins coming!
+          li Fuck all that 
+            a(href="https://www.npmjs.com/package/gulp-postcss")  configuration
+
+      
+      section(data-bespoke-state="theme--watermellon" data-bespoke-hash='easy')
+        h2 It's Wicked Easy
+        h3 Just use 
+          a(href='http://pleeease.io') Pleeease
+
+      
+      section(data-bespoke-state="theme--watermellon" data-bespoke-hash='pleeease')
+        h2 Pleeease
+        p
+          a(href='http://nodejs.org/download/') > Install Node.js <
+
+        pre.language-bash
+          code.
+            $ npm install -g pleeease
+            
+        pre.language-bash
+          code.
+            $ pleeease watch
+        p.hairline Let's check it out...
+            
+      section(data-bespoke-state="theme--dark" data-bespoke-hash='diy')
+        h2 Or, make your own...
+
+      
+      section(data-bespoke-state="theme--red" data-bespoke-hash='gulp')
+        h2
+          a(href='http://gulpjs.com/') Gulp 
+          | time fuckers!
+
+        pre.language-bash
+          code.
+            $ npm install --global gulp      
+      section(data-bespoke-state="theme--mint" data-bespoke-hash='gulpfile')
+        h2 gulpfile.js
+        pre.language-javascript
+          code.
+            var gulp = require('gulp');
+            var sass = require('gulp-sass');
+            var please = require('gulp-pleeease');
+
+            gulp.task('css', function() {
+              return gulp.src('./sass/main.scss')
+                .pipe(sass())
+                .pipe(please())
+                .pipe(gulp.dest('./'));
+            });
+            gulp.task('default', ['css']);
+            
+      section(data-bespoke-state="theme--dark" data-bespoke-hash='gulpwp')
+        h2 Yeah, yeah...
+        h3.hairline Show us the WordPress version fucker
+        
+        p
+          a(href="https://github.com/brownerd/gulpwp") Gulp for WP + Sass + Pleeease
+
+
+      
+      section(data-bespoke-hash='learn-more')
+        h2 Learn more...
+        ul
+          li 
+            a(href="http://twin.github.io/2014/09/css-pre-vs-post-processing/") CSS pre- vs. post-processing
+          li 
+            a(href="http://www.sitepoint.com/css-post-processing-pleeease/") CSS Post-Processing With Pleeease
+          li 
+            a(href="http://pleeease.io/play/") Pleeease play
+          li 
+            a(href="http://ai.github.io/about-postcss/en/") PostCSS: the Future after Sass and LESS
+          li 
+            a(href="https://scotch.io/tutorials/automate-your-tasks-easily-with-gulp-js") Automate Your Tasks Easily with Gulp.js
+          li 
+            a(href="http://www.sitepoint.com/introduction-gulp-js/") Introduction to Gulp JS
+          li
+            a(href="http://sass-guidelin.es/") Sass Guidelines
+
+      
+      section(data-bespoke-state="theme--watermellon" data-bespoke-hash='colophone')
+        h2 Colophone
+        ul
+          li 
+            icon(name="ei-arrow-down" size="s") 
+            a(href="http://github.com/brownerd/postprocess") Presentation source
+          li 
+            icon(name="ei-sc-github" size="s") 
+            a(href="https://github.com/markdalgleish/bespoke.js") Bespoke.js
+          li 
+            icon(name="ei-heart" size="s") 
+            a(href="http://evil-icons.io/") Evil Icons
+          li 
+            icon(name="ei-sc-github" size="s") 
+            a(href="http://gulpjs.com/") Gulp
+          li 
+            icon(name="ei-sc-github" size="s") 
+            a(href="http://www.browsersync.io/") Browser-Sync
+          li 
+            icon(name="ei-sc-github" size="s") 
+            a(href="http://jade-lang.com/") Jade
+          li 
+            icon(name="ei-sc-github" size="s") 
+            a(href="http://learnboost.github.io/stylus/") Stylus
+          li
+            icon(name="ei-sc-github" size="s")
+            a(href="http://www.google.com/fonts/specimen/Roboto+Slab") Roboto Slab
+            
+      
+      section(data-bespoke-state="theme--yellow" data-bespoke-hash='thanks')
+        h2 Thank you fuckers!
+
+    script(src='build/build.js')
