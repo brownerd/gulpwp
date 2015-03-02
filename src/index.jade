@@ -16,67 +16,41 @@ html
 
     article
 
-      section(data-bespoke-state="theme--watermellon" data-bespoke-hash='postcss')
-        h2 PostCSS
-        h4 Don't 
-          i pre-process 
-          | the 
-          i post-process
+      section(data-bespoke-state="theme--red" data-bespoke-hash='gulpwp')
+        h2 Gulp/WP
+        h4 Let's fucking do this!
       
-      section(data-bespoke-state="theme--yellow" data-bespoke-hash='welcome')
+      section(data-bespoke-state="theme--red" data-bespoke-hash='welcome')
         h2 Welcome fuckers
-
-      
-      section(data-bespoke-state="theme--mint" data-bespoke-hash='preprocess')
-        h3.bold The 
-          i pre
-          |-process:
-
         ul
-          li Write less code
-          li.strike Contatneate stylesheets
-          li.strike Minify css
-          li.strike Make sprite sheets
-          li.strike Make sourcemaps
-          li.strike Mixin browser prefixes
-          li.strike Mixin IE crap
+          li.bullet Gulp - 
+          li.bullet Pre - Processing
+          li.bullet Watching
+          li.bullet Post - Processing
+          li.bullet Other nerdy shit
 
       
-      section(data-bespoke-state="theme--white" data-bespoke-hash='postprocess')
-        h3 These are 
-          br 
-          i post
-          |-processes:
-          
-        ul
-          li Minification - 
-            a(href="https://github.com/hail2u/node-csswring") CSSWring
-            |  / 
-            a(href="https://github.com/css/csso") CSSO
-          li Browser prefixing - 
-            a(href="https://github.com/postcss/autoprefixer") Autoprefixer / 
-            a(href="https://github.com/ai/browserslist") Browserlist
-          li REM to px - 
-            a(href="https://github.com/robwierzbowski/node-pixrem") Pixrem
-          li Streamlining media queries - 
-            a(href="https://github.com/hail2u/node-css-mqpacker") CSS MQPacker
-          li CSS 3 polyfills for IE - 
-            a(href="https://github.com/cssdream/cssgrace") CSS Grace
-          li Can I Use? - 
-            a(href="https://github.com/anandthakker/doiuse") Do I use
-          li CSS4 - 
-            a(href="https://github.com/cssnext/cssnext") cssnext
-          li More 
-            a(href="https://github.com/postcss/postcss") postCSS
-            |  plugins coming!
-          li Fuck all that 
-            a(href="https://www.npmjs.com/package/gulp-postcss")  configuration
+      section(data-bespoke-state="theme--white" data-bespoke-hash='bam')
+        h3.bold Let's get to it
+        pre.language-javascript
+          code.
+            var gulp = require('gulp');
+            var sass = require('gulp-sass');
+            var please = require('gulp-pleeease');
+
+            gulp.task('css', function() {
+              return gulp.src('./sass/main.scss')
+                .pipe(sass())
+                .pipe(please())
+                .pipe(gulp.dest('./'));
+            });
+            gulp.task('default', ['css']);
 
       
-      section(data-bespoke-state="theme--watermellon" data-bespoke-hash='easy')
-        h2 It's Wicked Easy
-        h3 Just use 
-          a(href='http://pleeease.io') Pleeease
+      section(data-bespoke-state="theme--dark" data-bespoke-hash='code-time')
+        h3 Let's write some fucking code
+        p Watch it blow up in my face
+      
 
       
       section(data-bespoke-state="theme--watermellon" data-bespoke-hash='pleeease')
@@ -121,7 +95,7 @@ html
             });
             gulp.task('default', ['css']);
             
-      section(data-bespoke-state="theme--dark" data-bespoke-hash='gulpwp')
+      section(data-bespoke-state="theme--dark" data-bespoke-hash='gulps')
         h2 Yeah, yeah...
         h3.hairline Show us the WordPress version fucker
         

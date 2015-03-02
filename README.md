@@ -1,4 +1,13 @@
-# Post Process
+# Gulp and WordPress presentation
+
+This is a presentation for using Gulp with WordPress.
+
+
+Slides:
+
+1.
+2.
+
 > A [Bespoke.js](http://markdalgleish.com/projects/bespoke.js) presentation, built with [generator-bespoke](https://github.com/markdalgleish/generator-bespoke)
 
 ## View slides locally
